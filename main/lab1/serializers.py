@@ -5,3 +5,4 @@ class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = ('id', 'name', 'age', 'city')
+        read_only_fields = ('id',)
